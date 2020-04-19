@@ -1,5 +1,5 @@
 <template>
-    <div class="col-sm-6 col-md-4">
+    <div class="col-sm-6 col-md-4 mb-3">
         <div class="card">
             <h5 class="card-header">{{ stock.name}} <small>(${{ stock.price }})</small></h5>
             <div class="card-body">
