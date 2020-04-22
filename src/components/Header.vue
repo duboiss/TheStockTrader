@@ -30,7 +30,7 @@
                     </div>
                 </li>
             </ul>
-            <strong class="navbar-text">Funds: ${{ funds }}</strong>
+            <strong class="navbar-text">Funds: {{ funds | currency }}</strong>
         </div>
     </nav>
 </template>
