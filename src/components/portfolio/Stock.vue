@@ -53,6 +53,12 @@
                     quantity: this.quantity
                 };
                 this.placeSellOrder(order);
+
+                this.$toasted.success(`${this.stock.name}(${this.quantity}) sold!`, {
+                    duration: 2500,
+                    position: 'top-center'
+                });
+
                 this.quantity = 0;
             }
         }

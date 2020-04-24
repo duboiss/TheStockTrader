@@ -50,6 +50,12 @@
                     quantity: this.quantity
                 };
                 this.$store.dispatch('buyStock', order);
+
+                this.$toasted.success(`${this.stock.name}(${this.quantity}) bought!`, {
+                    duration: 2500,
+                    position: 'top-center'
+                });
+
                 this.quantity = 0;
             }
         }

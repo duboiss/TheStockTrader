@@ -68,9 +68,18 @@
                     stocks: this.$store.getters.stocks
                 };
                 this.$http.put('data.json', data);
+
+                this.$toasted.info('Data saved!', {
+                    duration: 2500,
+                    position: 'top-center'
+                });
             },
             loadData() {
                 this.fetchData();
+                this.$toasted.info('Data loaded!', {
+                    duration: 2500,
+                    position: 'top-center'
+                });
             }
         }
     }
